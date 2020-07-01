@@ -1,0 +1,72 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #CFD8DC;
+}
+
+/* General CSS rules */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 10;
+    padding: 10;
+}
+
+/* Header */
+
+
+header {
+    background: #4B4D4F;
+    color: #FFFFFF;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #F7941E 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #brand {
+    float: left;
+}
+
+header #brand img {
+    margin: 10;
+    width: 180px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #F7941E;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #F7941E;
+    font-weight: bold;
+}
+
+/* Showcase */
+
