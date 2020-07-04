@@ -70,3 +70,63 @@ header a:hover {
 
 /* Showcase */
 
+#showcase {
+    min-height: 120vh;
+    background: url('../images/bg-showcase-img.jpg') no-repeat center;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+#showcase h1 {
+    margin-top: 400px;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+/* Cards */
+
+#cards {
+    margin-top: 20px;
+}
+
+#cards .card {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+#cards .card img {
+    width: 100%;
+}
+
+#cards .card {
+    column-gap: 40px;
+}
+
+/* Footer */
+
+#footer .container {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #F7941E;
+    text-align: left;
+}
+
+#more-info {
+    min-height: 40vh;
+    background: url('../images/bgcover-img.jpg') no-repeat center;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+
