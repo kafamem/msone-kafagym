@@ -112,7 +112,7 @@ header a:hover {
 
 /* Footer */
 
-#footer .container {
+#footer .container-fluid {
     padding: 20px;
     margin-top: 20px;
     color: #fff;
@@ -121,12 +121,20 @@ header a:hover {
 }
 
 #more-info {
-    min-height: 40vh;
-    background: url('../images/bgcover-img.jpg') no-repeat center;
-    position: relative;
-    text-align: center;
+    min-height: 30vh;
+    background-image: url('../images/bgcover-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;   
+}
+
+#more-info div {
     color: #fff;
-    padding-bottom: 20px;
-    margin-bottom: 0px;
+    background-color: rgba(0, 0, 0, .6);
+    width: 19%;
+    height: 300px;
+
 }
 
