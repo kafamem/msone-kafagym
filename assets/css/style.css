@@ -26,8 +26,8 @@ ul {
     margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    color: #fff;
-    font-size: 24px;
+    color: #fafafa;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -39,14 +39,14 @@ ul {
 
 header {
     background: #4B4D4F;
-    color: #ffffff;
+    color: #fafafa;
     padding-top: 30px;
     min-height: 70px;
     border-bottom: #F7941E 3px solid;  
 }
 
 header a {
-    color: #ffffff;
+    color: #fafafa;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
@@ -89,7 +89,7 @@ header a:hover {
     min-height: 114vh;
     background: url('../images/bg-showcase-img.jpg') no-repeat center;
     text-align: center;
-    color: #fff;
+    color: #fafafa;
 }
 
 #showcase h1 {
@@ -108,7 +108,7 @@ header a:hover {
 
 #newsletter {
     padding: 15px;
-    color: #fff;
+    color: #fafafa;
     background: #4B4D4F;
 }
 
@@ -118,7 +118,7 @@ header a:hover {
 
 #newsletter form {
     float: right;
-    margin-top: 15px;
+    margin-top: 0px;
 }
 
 #newsletter input[type="email"] {
@@ -143,10 +143,14 @@ header a:hover {
     margin-bottom: 10px;
 }
 #cards .card {
-    color: #fff;
+    color: #fafafa;
     float: left;
     width: 300px;
     text-align: center;
+}
+
+#cards .container {
+    margin: auto;
 }
 
 #cards .column {
@@ -176,7 +180,7 @@ header a:hover {
 }
 
 #cards .card h3 {
-    color: #fff;
+    color: #fafafa;
     font-weight: bold;
 }
 
@@ -184,19 +188,47 @@ header a:hover {
     justify-content: center;
 }
 
+/* More Info */
+
+#more-info {
+    background-image: url('../images/bgcover-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+#more-info div {
+   color: #fafafa;
+   background-color: rgba(0, 0, 0, 0.6);
+   width:19%;
+   height: 300px;
+   float: left;
+   padding: 10px 0 0 85px;
+   text-align: center;
+   margin: 2px;
+}
+
+#more-info li .icon {
+    color: #fafafa;
+    float: left;
+    text-decoration: none;
+}
+
 /* Footer */
 
 footer {
     padding: 20px;
     margin-top: 20;
-    color: #fff;
+    color: #fafafa;
     background-color: #F7941E;
     text-align: center;
 }
 
 /* Media Queries */
 
-@media screen and (max-width: 605px) {
+@media screen and (max-width: 600px) {
   #cards .column {
     width: 100%;
     display: block;
