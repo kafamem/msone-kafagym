@@ -129,6 +129,10 @@ header a:hover {
     margin-top: 0px;
 }
 
+/* #newsletter .email {
+    width: 90%
+} */
+
 #newsletter input[type="email"] {
     padding: 4px;
     height: 25px;
@@ -237,6 +241,11 @@ aside#sidebar {
     margin-top: 10px;
 }
 
+aside#sidebar .membership input {
+    width: 90%;
+    padding: 5px;
+}
+
 #sidebar a {
     color: #F7941E;
 }
@@ -246,6 +255,16 @@ aside#sidebar {
 article#main-col {
     float: left;
     width: 65%;
+}
+
+/* Sports */
+
+ul#sports li {
+    background: #4B4D4F;
+    border: #fafafa solid 1px;
+    margin-bottom: 5px;
+    list-style: none;
+    padding: 20px;
 }
 
 /* Footer */
@@ -324,7 +343,7 @@ footer a:hover {
     height: 150%;
     border-style: solid;
     border-bottom-width: 1px;
-    border-bottom-color: #fafafa;
+    border-bottom-color:#F7941E;
     padding:0;
     }
 }
