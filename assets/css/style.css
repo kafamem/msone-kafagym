@@ -19,7 +19,7 @@ ul {
     padding: 0;
 }
 
-.button_1 {
+.button {
     height: 36px;
     background: #F7941E;
     border: 0;
@@ -35,12 +35,18 @@ ul {
     cursor: pointer;
 }
 
-.dark {
+.opaque {
     padding: 15px;
     background: #4B4D4F;
     color: #fafafa;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.page-title {
+    color: #4B4D4F;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 /* Header section */
@@ -81,7 +87,7 @@ header nav {
     margin-top: 10px;
 }
 
-header .hightlight, header .current a {
+header .hightlight, header .active a {
     color: #F7941E;
     font-weight: bold;
 }
@@ -139,7 +145,7 @@ header a:hover {
     width: 250px;
 }
 
-/* Box section */
+/* Card section */
 
 #cards {
     margin:20px;
@@ -231,8 +237,6 @@ header a:hover {
   list-style-type:  none;
 }
 
-
-
 /* Sidebar */
 
 aside#sidebar {
@@ -265,6 +269,19 @@ ul#sports li {
     margin-bottom: 5px;
     list-style: none;
     padding: 20px;
+}
+
+#video-style {
+    border:1px solid #F7941E;
+    padding: 4px;
+}
+
+.yoga-video {
+    width: 100%;
+}
+
+.bggym {
+    width: 100%;
 }
 
 /* Footer */
