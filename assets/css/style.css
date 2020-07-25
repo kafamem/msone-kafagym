@@ -4,7 +4,7 @@ body {
     line-height: 1.5;
     margin: 0;
     padding: 0;
-    background-color: #CFD8DC;    
+    background-color: #CFD8DC !important;    
 }
 
 /* Global rules */
@@ -19,8 +19,11 @@ ul {
     padding: 0;
 }
 
-.button {
-    height: 36px;
+
+/* Buttons */
+
+/* .button {
+    height: 40px;
     background: #F7941E;
     border: 0;
     margin-top: 20px;
@@ -30,6 +33,19 @@ ul {
     font-size: 15px;
     font-weight: bold;
     border-radius: 10px;
+} */
+
+.btn--cta {    
+    font-weight: bold;
+    position: relative;
+    width: 160px;
+    border-radius: 23px;
+}
+
+.btn--orange {
+    background-color: #F7941E;
+    color: #fafafa;
+    border-color: #F7941E;
 }
 
 .pointer {
@@ -42,6 +58,15 @@ ul {
     color: #fafafa;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .page-title {
@@ -60,9 +85,8 @@ header {
     border-bottom: #F7941E 3px solid;  
 }
 
-header a {
+header a, a:hover {
     color: #fafafa;
-    text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
 }
@@ -96,6 +120,7 @@ header .hightlight, header .active a {
 header a:hover {
     color: #F7941E;
     font-weight: bold;
+    text-decoration: none;
 }
 
 /* Showcase section */
@@ -108,6 +133,7 @@ header a:hover {
     text-align: center;
     color: #fafafa;
     background-attachment: fixed;
+    position: relative;
 }
 
 #showcase h1 {
@@ -115,11 +141,13 @@ header a:hover {
     font-size: 55px;
     font-weight: bold;
     margin-bottom: 10px;
+    position: relative;
 }
 
 #showcase p {
     font-size: 20px;
     font-weight: bold;
+    position: relative;
 }
 
 /* Newsletter section */
@@ -139,9 +167,9 @@ header a:hover {
     margin-top: 0px;
 }
 
-/* #newsletter .email {
-    width: 90%
-} */
+#newsletter .email {
+    width: 100%
+}
 
 #newsletter input[type="email"] {
     padding: 4px;
@@ -156,7 +184,7 @@ header a:hover {
     box-sizing: border-box;
 }
 
-#cards .cards-title {
+.card-container .cards-title {
     text-align: center;
     font-size: 40px;
     color: #4B4D4F;
@@ -164,51 +192,51 @@ header a:hover {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-#cards .card {
+.card-container .card {
     color: #fafafa;
-    float: left;
-    width: 300px;
+    width: 100%;
     text-align: center;
+    display: flex;
 }
 
-#cards .container {
+.card-container {
     margin: auto;
 }
 
-#cards .column {
-  float: left;
-  width: 30%;
-  padding: 0 10px;
-}
-
 #cards .row {
-    margin: 0 -5px;
+    margin: 0 -05px;
 }
 
-#cards .row:after {
-  display: table;
-  clear: both;
+.inner {
+    overflow: hidden;
 }
 
-#cards .card {
+.inner img {
+    transition: all 1.5s ease;
+}
+
+.inner:hover img {
+    transform: scale(1.3);
+}
+
+
+.card-container .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   padding: 16px;
   text-align: center;
   background-color:#4B4D4F;
 }
 
-#cards .card img {
-    width: 300px;
+.card-container .card, img {
+    width: 100%;
 }
 
-#cards .card h3 {
+.card-container .card h5 {
     color: #fafafa;
     font-weight: bold;
 }
 
-#cards .card p {
-    justify-content: center;
-}
+
 
 /* More Info */
 
@@ -297,6 +325,7 @@ ul#sports li {
     background-attachment: fixed;
     margin-top: 1.5px;
     margin-bottom: 1.5px;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 #membership-form {

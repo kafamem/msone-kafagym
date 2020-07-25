@@ -37,64 +37,67 @@
 
     <!-- Membership -->
 
-    <div id="membership-section" class="container-fluid">
+    <div id="membership-section" class="container opaque">
         <div class="row">
             <div class="col-lg-3"></div>
 
             <div class="col-lg-6">
                 <div id="membership-form">
                     <h2 class="text-center">Become a Member</h2>
-                    <form class="form-group text-center">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <label>First Name:</label>
-                                <input type="text" name="fname" class="form-control" placeholder="e.g. Fabrice">
+                    <p>Please fill in this form to create an account.</p>
+                    <hr>
+                        <form class="form-group text-center">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <label>First Name:</label>
+                                    <input type="text" name="fname" class="form-control" placeholder="e.g. Fabrice">
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <label>Last Name:</label>
+                                    <input type="text" name="laname" class="form-control" placeholder="e.g. Karenzi">
+                                </div>
+
+                            </div><br>
+
+                            <label>Email</label>
+                            <input type="text" name="email" class="form-control" placeholder="Enter your Email here..."><br>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <label>Password:</label>
+                                    <input type="password" name="password" class="form-control" placeholder="Create Password">
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <label>Re-type password:</label>
+                                    <input type="password" name="password" class="form-control" placeholder="Retype Password">
+                                </div>
+
+                            </div><br>
+
+                            <select class="form-control">
+                                <option>Choose Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select><br>
+                            <select class="form-control">
+                                <option>Choose your age category</option>
+                                <option>12 - 17</option>
+                                <option>18 - 64</option>
+                                <option>65 + ...</option>
+                            </select><br>
+
+                            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                            <div class="clearfix">
+                            <!-- <button type="button" class="cancelbtn btn-lg">Cancel</button> -->
+                            <button type="submit" class="btn btn--cta btn--orange" value="Sign Up">Sign Up</button>
                             </div>
-
-                            <div class="col-lg-6">
-                                <label>Last Name:</label>
-                                <input type="text" name="laname" class="form-control" placeholder="e.g. Karenzi">
-                            </div>
-
-                        </div><br>
-
-                        <label>Email</label>
-                        <input type="text" name="email" class="form-control" placeholder="Enter your Email here..."><br>
-
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <label>Password:</label>
-                                <input type="password" name="password" class="form-control" placeholder="Create Password">
-                            </div>
-
-                            <div class="col-lg-6">
-                                <label>Re-type password:</label>
-                                <input type="password" name="password" class="form-control" placeholder="Retype Password">
-                            </div>
-
-                        </div><br>
-
-                        <select class="form-control">
-                            <option>Choose your age category</option>
-                            <option>12 - 17</option>
-                            <option>18 - 64</option>
-                            <option>65 + ...</option>
-                        </select><br>
-
-                        <select class="form-control">
-                            <option>Choose weight range</option>
-                            <option>12 - 17</option>
-                            <option>18 - 64</option>
-                            <option>65 + ...</option>
-                        </select><br>
-
-                        <p>Already have an account? Login <a href="#">here.</a></p>
-
-                        <input type="submit" name="submit" value="Sign Up" class="btn button btn-block btn-lg">
-
-
-                    </form>                
-                </div>
+                            <p>Already have an account? Login <a href="#">here.</a></p>
+                        </form>                
+                </div>    
             </div>
 
             <div class="col-lg-3"></div>
