@@ -4,7 +4,7 @@ body {
     line-height: 1.5;
     margin: 0;
     padding: 0;
-    background-color: #CFD8DC !important;
+    background-color: #DCDDDE !important;
 }
 
 /* Global rules */
@@ -17,33 +17,6 @@ body {
 ul {
     margin: 0;
     padding: 0;
-}
-
-
-/* Buttons */
-
-.btn--cta {
-    font-weight: bold;
-    position: relative;
-    width: 160px;
-    border-radius: 23px;
-}
-
-.btn--orange {
-    background-color: #F7941E;
-    color: #fafafa;
-    border-color: #F7941E;
-}
-
-.btn--orange:hover {
-    background-color: #F7941E;
-    color: #fafafa;
-    border-color: #F7941E;
-    font-weight: bold;
-}
-
-.pointer {
-    cursor: pointer;
 }
 
 .opaque {
@@ -68,6 +41,35 @@ ul {
     text-transform: uppercase;
     margin-top: 20px;
 }
+
+
+/* Buttons */
+
+.btn--cta {
+    font-weight: bold;
+    position: relative;
+    width: 160px;
+    border-radius: 23px;
+}
+
+.btn--orange {
+    background-color: #FAA61A;
+    color: #fafafa;
+    border-color: #FAA61A;
+    text-align: center !important;
+}
+
+.btn--orange:hover {
+    background-color: #F7941E;
+    color: #fafafa;
+    border-color: #F7941E;
+    font-weight: bold;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
 
 /* Navigation*/
 
@@ -177,9 +179,14 @@ ul {
 /* Card section */
 
 #cards {
-    margin:20px;
+    margin: 0px;
     box-sizing: border-box;
+
 }
+
+/* .card-container {
+    box-shadow: 2px;
+} */
 
 .card-container .cards-title {
     text-align: center;
@@ -189,19 +196,22 @@ ul {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-/* .card-container .card {
-    color: #fafafa;
-    width: 100%;
+
+#cards .card-title {
     text-align: center;
-    display: flex;
-} */
+    font-size: 30px;
+    color: #4B4D4F;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 .card-container {
     margin: auto;
 }
 
 #cards .row {
-    margin: 0 -05px;
+    margin: 0 -2px;
 }
 
 .card-img-top {
@@ -221,24 +231,10 @@ ul {
     transform: scale(1.3);
 }
 
-
-/* .card-container .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-  padding: 16px;
-  text-align: center;
-  background-color:#4B4D4F;
-} */
-
-.card-container .card, img {
-    width: 100%;
-}
-
 .card-container .card h5 {
     color: #fafafa;
     font-weight: bold;
 }
-
-
 
 /* More Info */
 
@@ -334,24 +330,26 @@ article#main-col {
     color: #fafafa;
 }
 
-
 /* Footer */
 
 #footer {
     padding-top: 20px;
     margin-top: 20px;
-    background-color:#F7941E;
+    background-color:#FAA61A;
     color: #fafafa;
     overflow: hidden;
     padding-left: 30px;
+    position: relative;  
 }
 
-.footer-content {
-
-}
-
-.footer-content {
-
+#footer .footer-bottom {
+    background: #F7941E;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    bottom: 0px;
+    left: 0px;
+    margin-left: -40px;
 }
 
 .social-networks {
@@ -367,25 +365,45 @@ article#main-col {
   margin: 1%;
   padding: 5%;
   color: #fafafa;
-} 
+}
+
+.contact-us h5:before {
+    content: '|';
+    padding-right: 10px;
+}
+
+.contact-us i {
+    font-size: 150%;
+}
+
+.opening-hours h5:before {
+    content: '|';
+    padding-right: 10px;
+}
+
+.newsletter h5:before {
+    content: '|';
+    padding-right: 10px;
+}
+
+.newsletter form input [type=submit] {
+    background: rgb(14, 13, 12);
+    border: none;
+    padding: 3px 15px;
+    margin-left: -5px;
+    color: #fafafa;
+    text-transform: uppercase;    
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 770px) {
-    header #branding,
-    header nav,
-    header nav li,
-    #newletter h1,
-    #newsletter form,
     #cards .card,
     article#main-col,
     aside#sidebar {
         float:none;
         text-align: center;
         width: 100%;
-    }
-
-    header {
-        padding: 20px;
     }
 
     #showcase h1 {
@@ -397,10 +415,10 @@ article#main-col {
         width: 100%;
     }
 
-    #newsletter form input [type="email"]{
+    /* #newsletter form input [type="email"]{
         width: 100%;
         margin-bottom: 4px;
-    }
+    } */
 
   #cards .column {
     width: 100%;
@@ -409,17 +427,7 @@ article#main-col {
   }
 }
 
-@media screen and (max-width: 1393px){
-#more-info div {
-    width: 100%;
-    clear: both;
-    height: 150%;
-    border-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color:#F7941E;
-    padding:0;
-    }
-}
+
 
 
 
