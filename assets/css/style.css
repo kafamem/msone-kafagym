@@ -184,10 +184,6 @@ ul {
 
 }
 
-/* .card-container {
-    box-shadow: 2px;
-} */
-
 .card-container .cards-title {
     text-align: center;
     font-size: 40px;
@@ -395,6 +391,32 @@ article#main-col {
     text-transform: uppercase;    
 }
 
+/* Contact Area */
+
+.contact-container h2 {
+    text-align: center;
+    font-size: 40px;
+    border-bottom: 2px dotted #F7941E;
+    color: #4B4D4F;
+}
+
+.contact-container h3 {
+    text-align: center;
+    color: #4b4d4f;
+}
+
+.contact-container p {
+    text-align: center;
+}
+
+.icon {
+    color: #4b4d4f;
+    font-size: 17px;
+}
+
+hr {
+   width: 80%; 
+}
 /* Media Queries */
 
 @media screen and (max-width: 770px) {
