@@ -334,8 +334,19 @@ article#main-col {
     border: #cccccc solid 1px;
     margin-bottom: 5px;
     background: #e6e6e6;
+    border-radius: 5px;
 }
 /* Contact Area */
+
+.contact-container {
+    margin-top: 10px;
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+    border-radius: 5px;
+}
 
 .contact-container h2 {
     text-align: center;
