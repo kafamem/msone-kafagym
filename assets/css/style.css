@@ -40,6 +40,7 @@ ul {
     color: #4B4D4F;
     text-transform: uppercase;
     margin-top: 20px;
+    font-size: 25px;
 }
 
 
@@ -147,33 +148,6 @@ ul {
     font-size: 20px;
     font-weight: bold;
     position: relative;
-}
-
-/* Newsletter section */
-
-#newsletter {
-    padding: 15px;
-    color: #fafafa;
-    background: #4B4D4F;
-}
-
-#newsletter h1 {
-    float: left;
-}
-
-#newsletter form {
-    float: right;
-    margin-top: 0px;
-}
-
-#newsletter .email {
-    width: 100%
-}
-
-#newsletter input[type="email"] {
-    padding: 4px;
-    height: 25px;
-    width: 250px;
 }
 
 /* Card section */
@@ -287,6 +261,36 @@ article#main-col {
     width: 65%;
 }
 
+/* Gallery */
+
+  div.gallery {
+      border: 1px solid #ccc;
+  }
+
+  div.gallery:hover {
+      border: 1px solid #FAA61A;
+  }
+
+  div.gallery img {
+      width: 100%;
+      height: auto;
+  }
+
+  div.description {
+      padding: 15px;
+      text-align: center;
+  }
+
+  * {
+      box-sizing: border-box;
+  }
+
+  .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 25%
+  }
+
 /* Sports */
 
 .container-sports {
@@ -322,7 +326,7 @@ article#main-col {
     opacity: 0.9;
 }
 
-#membership-form label,h2, {
+#membership-form label,h5, {
     color: #fafafa;
 }
 
@@ -339,7 +343,7 @@ article#main-col {
 /* Contact Area */
 
 .contact-container {
-    margin-top: 10px;
+    margin-top: 20px;
     list-style: none;
     padding: 20px;
     border: #cccccc solid 1px;
@@ -429,7 +433,7 @@ hr {
     padding-right: 10px;
 }
 
-.newsletter form input [type=submit] {
+.newsletter form input .newsletter [type=submit] {
     background: rgb(14, 13, 12);
     border: none;
     padding: 3px 15px;
@@ -441,7 +445,8 @@ hr {
 
 /* Media Queries */
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
+       
     #cards .card,
     article#main-col,
     aside#sidebar {
@@ -452,23 +457,34 @@ hr {
 
     #showcase h1 {
         margin-top: 60px;
+        margin-bottom: 40px;
     }
 
-    #newsletter button, .email {
+    #cards .column {
+        width: 100%;
         display: block;
-        width: 100%;
+        margin-bottom: 10px;
     }
 
-    /* #newsletter form input [type="email"]{
-        width: 100%;
-        margin-bottom: 4px;
-    } */
+    @media only screen and (max-width: 700px) {
+        .responsive {
+            width: 49,99999%;
+            margin: 6px 0;
+        }
+    }
 
-  #cards .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 10px;
-  }
+    @media only screen and (max-width: 500px) {
+        .responsive {
+            width: 100%;
+        }
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
 }
 
 
