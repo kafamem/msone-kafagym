@@ -108,12 +108,12 @@ ul {
     min-height: 70px;
 }
 
-#navbarNav .current a {
-    color: #F7941E;
+#navbarNav .active {
+    color: #F7941E!important;
 }
 
 .navbar-toggler {
-    border: none!important;
+    border: #F7941E!important;
 }
 
 .nav-link {
@@ -155,7 +155,6 @@ ul {
 #cards {
     margin: 0px;
     box-sizing: border-box;
-
 }
 
 .card-container .cards-title {
@@ -206,35 +205,13 @@ ul {
     font-weight: bold;
 }
 
-/* More Info */
+/* Main-col */
 
-#more-info {
-    background-image: url('../images/bgcover-img.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    overflow: hidden;
-}
-
-#more-info div {
-   color: #fafafa;
-   background-color: rgba(0, 0, 0, 0.6);
-   width:19%;
-   height: 300px;
-   float: left;
-   padding: 10px 10px 10px 85px;
-   text-align: center;
-   margin: 2px;
-}
-
-#more-info li a {
-  display: inline;
-  color: #fafafa;
-  text-align: center;
-  padding: 20px;
-  text-decoration: none;
-  list-style-type:  none;
+article#main-col {
+    float: left;
+    width: 65%;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /* Sidebar */
@@ -254,11 +231,9 @@ aside#sidebar .membership input {
     color: #F7941E;
 }
 
-/* Main-col */
-
-article#main-col {
-    float: left;
-    width: 65%;
+#sidebar p {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /* Gallery */
@@ -291,19 +266,28 @@ article#main-col {
       width: 25%
   }
 
-/* Sports */
+  /* Sports */
 
 .container-sports {
     position: relative;
     width: 100%
 }
 
-.container-sports video {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+#sports ul li {
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+    border-radius: 5px;
 }
+
+#sports img {
+    width: 100%;
+    border-radius: 4px;
+    height: auto;
+}
+
 
 /* Membership */
 
@@ -313,7 +297,7 @@ article#main-col {
     background-position: center center;
     background-attachment: fixed;
     margin-top: 1.5px;
-    margin-bottom: 1.5px;
+    margin-bottom: 6px;
     background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -330,22 +314,6 @@ article#main-col {
     color: #fafafa;
 }
 
-/* Sports */
-
-#sports ul li {
-    list-style: none;
-    padding: 20px;
-    border: #cccccc solid 1px;
-    margin-bottom: 5px;
-    background: #e6e6e6;
-    border-radius: 5px;
-}
-
-#sports img {
-    width: 100%;
-    border-radius: 4px;
-    height: auto;
-}
 /* Contact Area */
 
 .contact-container {
@@ -370,8 +338,12 @@ article#main-col {
     color: #4b4d4f;
 }
 
-.contact-container p {
+.contact-container .contact-center {
     text-align: center;
+}
+
+.contact-container p {
+    text-align: left;
 }
 
 .icon {
@@ -381,6 +353,10 @@ article#main-col {
 
 hr {
    width: 80%; 
+}
+
+.contact-container .btn--cta {
+    text-align: center;
 }
 
 /* Footer */
@@ -406,7 +382,7 @@ hr {
 }
 
 .social-networks {
-    text-align: left;
+    text-align: center;
 }
 
 .social-networks li {
@@ -453,7 +429,7 @@ hr {
 
 @media screen and (max-width: 768px) {
        
-    /* #cards .card, */
+    #cards .card,
     article#main-col,
     aside#sidebar {
         float:none;
@@ -471,27 +447,46 @@ hr {
         display: block;
         margin-bottom: 10px;
     }
+}
 
-    @media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
         .responsive {
             width: 49,99999%;
             margin: 6px 0;
-        }
+        }    
     }
 
-    @media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
         .responsive {
             width: 100%;
         }
-    }
 
-    .clearfix:after {
+        .clearfix:after {
         content: "";
         display: table;
         clear: both;
+        }
+
+        .contact-container p {
+        text-align: center;
+        }
+
+        /* #showcase {
+        min-height: 90vh;
+        background: url('../images/bg-showcase-img.jpg') no-repeat;
+        background-position: center center;
+        background-size: cover;
+        text-align: center;
+        color: #fafafa;
+        background-attachment: fixed;
+        position: relative;
+        } */
+
     }
 
-}
+    
+
+    
 
 
 
