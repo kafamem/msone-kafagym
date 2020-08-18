@@ -127,7 +127,7 @@ ul {
 
 #showcase {
     min-height: 90vh;
-    background: url('../images/bg-showcase-img.jpg') no-repeat 0 -400px;
+    background: url('../images/bg-showcase-img.jpg') no-repeat;
     background-position: center center;
     background-size: cover;
     text-align: center;
@@ -157,7 +157,11 @@ ul {
     box-sizing: border-box;
 }
 
-.card-container .cards-title {
+.card-container {
+    margin: auto;
+}
+
+.cards-title {
     text-align: center;
     font-size: 40px;
     color: #4B4D4F;
@@ -168,15 +172,14 @@ ul {
 
 #cards .card-title {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     color: #4B4D4F;
-    font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.card-container {
-    margin: auto;
+.card-container p {
+    text-align: justify;
 }
 
 #cards .row {
@@ -201,8 +204,7 @@ ul {
 }
 
 .card-container .card h5 {
-    color: #fafafa;
-    font-weight: bold;
+    color: #4B4D4F;
 }
 
 /* Main-col */
@@ -283,13 +285,21 @@ aside#sidebar .membership input {
 }
 
 #sports img {
-    width: 100%;
+    width: 80%;
     border-radius: 4px;
     height: auto;
 }
 
+.sport-container p {
+    float: right;
+    padding-right: 10px;
+}
 
-/* Membership */
+.sport-types .sport-details {
+    float: right;
+}
+
+/* Sign Up */
 
 #signup-section {
     background-image: url('../images/bggym.jpg');
@@ -297,7 +307,7 @@ aside#sidebar .membership input {
     background-position: center center;
     background-attachment: fixed;
     margin-top: 1.5px;
-    margin-bottom: 6px;
+    margin-bottom: 1.5px;
     background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -308,10 +318,6 @@ aside#sidebar .membership input {
     margin-bottom: 50px;
     border-radius: 10px;
     opacity: 0.9;
-}
-
-#signup-form label,h5, {
-    color: #fafafa;
 }
 
 /* Contact Area */
@@ -382,7 +388,7 @@ hr {
 }
 
 .social-networks {
-    text-align: center;
+    text-align: left;
 }
 
 .social-networks li {
