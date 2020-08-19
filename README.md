@@ -101,7 +101,7 @@ the content easily and with help of eye catching features to attract their atten
 
 In order to check the validity of the website code, the W3C Markup Validator and W3C CSS Validator were used on each page of the website to check the syntax errors.
 * https://validator.w3.org/
-* https://jigsaw.w3.org/css-validator/ (some css issues were identified but due to time constraints, I have been able to address them).
+* https://jigsaw.w3.org/css-validator/ (some css issues were identified but due to time constraints, I have not been able to address them).
 
 ### Testing User Stories from User Experience (UX)
 1. First Time User Goal
