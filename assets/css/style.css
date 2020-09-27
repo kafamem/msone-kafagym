@@ -1,3 +1,7 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
@@ -153,12 +157,17 @@ ul {
 
 #cards {
     margin: 0px;
-    box-sizing: border-box;
+    padding: 0px;
+    /* box-sizing: border-box; */
 }
 
-.card-container {
-    margin: auto;
+#cards .card {
+    display: inline-block;
 }
+
+/* .card-container {
+    margin: auto;
+} */
 
 .cards-title {
     text-align: center;
@@ -177,6 +186,17 @@ ul {
     margin-bottom: 10px;
 }
 
+.card-body {
+    box-shadow: 0 0 20px 7px rgba(0,0,0,0.1);
+}
+
+.card {
+    margin: 20px 10px;
+}
+
+.card-body a {
+    margin-top: auto;
+}
 .card-container p {
     text-align: justify;
 }
@@ -239,39 +259,35 @@ aside#sidebar .membership input {
 
 /* Gallery */
 
-  div.gallery {
+  .gallery-container .thumbnail {
       border: 1px solid #ccc;
   }
 
-  div.gallery:hover {
-      border: 1px solid #FAA61A;
+  .thumbnail:hover {
+      border: 2px solid #FAA61A;
   }
 
-  div.gallery img {
-      width: 100%;
+  .gallery-container img {
       height: auto;
   }
 
-  div.description {
-      padding: 15px;
+  .gallery-container .caption {      
+      color: #000000;
+      padding: 10px;
       text-align: center;
+      text-decoration: none;
   }
 
-  * {
-      box-sizing: border-box;
-  }
-
-  .responsive {
-      padding: 0 6px;
-      float: left;
-      width: 25%
+  .gallery-container .caption:hover {
+      
+      text-decoration: none;
   }
 
   /* Sports */
 
 .container-sports {
     position: relative;
-    width: 100%
+    width: 100%;
 }
 
 #sports ul li {
@@ -431,51 +447,30 @@ hr {
 
 /* Media Queries */
 
-@media screen and (max-width: 768px) {
-       
-    #cards .card,
-    article#main-col,
-    aside#sidebar {
-        float:none;
-        text-align: center;
-        width: 100%;
+
+@media(max-width: 768px) and (max-device-width: 1024px){
+
+    #showcase {
+        margin-bottom: 10px;
     }
 
     #showcase h1 {
-        margin-top: 60px;
+        margin-top: 40px;
         margin-bottom: 40px;
     }
 
-    #cards .column {
+    article#main-col,
+    aside#sidebar {
+        float:none;
+        text-align: justify;
         width: 100%;
-        display: block;
-        margin-bottom: 10px;
+    }
+
+    #cards .card {
+        margin-top: 10px;
     }
 }
 
-@media only screen and (max-width: 700px) {
-        .responsive {
-            width: 49,99999%;
-            margin: 6px 0;
-        }    
-    }
-
-@media only screen and (max-width: 500px) {
-        .responsive {
-            width: 100%;
-        }
-
-        .clearfix:after {
-        content: "";
-        display: table;
-        clear: both;
-        }
-
-        .contact-container p {
-        text-align: center;
-        }
-
-    }
 
     
 
