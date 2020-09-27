@@ -129,7 +129,7 @@ ul {
 /* Showcase section */
 
 #showcase {
-    min-height: 90vh;
+    min-height: 100vh;
     background: url('../images/bg-showcase-img.jpg') no-repeat;
     background-position: center center;
     background-size: cover;
@@ -156,18 +156,13 @@ ul {
 /* Card section */
 
 #cards {
-    margin: 0px;
+    margin: 10px;
     padding: 0px;
-    /* box-sizing: border-box; */
 }
 
 #cards .card {
     display: inline-block;
 }
-
-/* .card-container {
-    margin: auto;
-} */
 
 .cards-title {
     text-align: center;
@@ -322,7 +317,7 @@ aside#sidebar .membership input {
     background-position: center center;
     background-attachment: fixed;
     margin-top: 1.5px;
-    margin-bottom: 1.5px;
+    margin-bottom: 0px;
     background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -384,7 +379,7 @@ hr {
 
 #footer {
     padding-top: 20px;
-    margin-top: 20px;
+    margin-top: 1.5px;
     background-color:#FAA61A;
     color: #fafafa;
     overflow: hidden;
@@ -448,10 +443,18 @@ hr {
 /* Media Queries */
 
 
-@media(max-width: 768px) and (max-device-width: 1024px){
+@media(max-width: 768px){
 
     #showcase {
         margin-bottom: 10px;
+        min-height: 90vh;
+        background: url('../images/bg-showcase-img.jpg') no-repeat;
+        background-position: center center;
+        background-size: cover;
+        text-align: center;
+        color: #fafafa;
+        background-attachment: fixed;
+        position: relative;
     }
 
     #showcase h1 {
@@ -468,6 +471,7 @@ hr {
 
     #cards .card {
         margin-top: 10px;
+        column-gap: 40px;
     }
 }
 
