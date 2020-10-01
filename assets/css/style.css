@@ -129,18 +129,27 @@ ul {
 /* Showcase section */
 
 #showcase {
-    min-height: 100vh;
-    background: url('../images/bg-showcase-img.jpg') no-repeat;
+
+    height: 100vh;
+
+    background: url('../images/bg-showcase-img.jpg')no-repeat;
     background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     text-align: center;
     color: #fafafa;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-attachment: fixed;
     position: relative;
 }
 
 #showcase h1 {
-    margin-top: 300px;
+    margin-top: 150px;
     font-size: 55px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -197,7 +206,7 @@ ul {
 }
 
 #cards .row {
-    margin: 0 -2px;
+    margin: 0 -10px;
 }
 
 .card-img-top {
@@ -266,7 +275,7 @@ aside#sidebar .membership input {
       height: auto;
   }
 
-  .gallery-container .caption {      
+  .gallery-container .caption {
       color: #000000;
       padding: 10px;
       text-align: center;
@@ -274,7 +283,7 @@ aside#sidebar .membership input {
   }
 
   .gallery-container .caption:hover {
-      
+
       text-decoration: none;
   }
 
@@ -368,7 +377,7 @@ aside#sidebar .membership input {
 }
 
 hr {
-   width: 80%; 
+   width: 80%;
 }
 
 .contact-container .btn--cta {
@@ -384,7 +393,7 @@ hr {
     color: #fafafa;
     overflow: hidden;
     padding-left: 30px;
-    position: relative;  
+    position: relative;
 }
 
 #footer .footer-bottom {
@@ -437,7 +446,7 @@ hr {
     padding: 3px 25px;
     margin-left: -5px;
     color: #fafafa;
-    text-transform: uppercase;    
+    text-transform: uppercase;
 }
 
 /* Media Queries */
@@ -445,21 +454,9 @@ hr {
 
 @media(max-width: 768px){
 
-    #showcase {
-        margin-bottom: 10px;
-        min-height: 90vh;
-        background: url('../images/bg-showcase-img.jpg') no-repeat;
-        background-position: center center;
-        background-size: cover;
-        text-align: center;
-        color: #fafafa;
-        background-attachment: fixed;
-        position: relative;
-    }
-
     #showcase h1 {
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 50px;
+        margin-bottom: 0px;
     }
 
     article#main-col,
@@ -468,17 +465,13 @@ hr {
         text-align: justify;
         width: 100%;
     }
-
-    #cards .card {
-        margin-top: 10px;
-        column-gap: 40px;
-    }
 }
 
 
-    
 
-    
+
+
+
 
 
 
