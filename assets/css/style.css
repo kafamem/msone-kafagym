@@ -75,7 +75,6 @@ ul {
     cursor: pointer;
 }
 
-
 /* Navigation*/
 
 #nav-bar {
@@ -141,7 +140,7 @@ ul {
 
 #showcase h1 {
     margin-top: 310px;
-    font-size: 55px;
+    font-size: 70px;
     font-weight: bold;
     margin-bottom: 10px;
     position: relative;
@@ -152,7 +151,6 @@ ul {
     font-weight: bold;
     position: relative;
 }
-
 
 /* Card section */
 
@@ -439,7 +437,6 @@ hr {
 
 /* Media Queries */
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     #showcase {
         width: 100%;
@@ -461,7 +458,6 @@ hr {
     
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     #showcase {
         width: 100%;
@@ -481,8 +477,6 @@ hr {
     }
 }
     
-
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     #showcase {
         width: 100%;
@@ -490,12 +484,12 @@ hr {
 }
     #showcase h1 {
         width: 100%;
-        font-size: 60px;
+        font-size: 55px;
         margin-top: 400px;
         margin-bottom: 0px;
     }
     #showcase p {
-        font-size: 30px;
+        font-size: 20px;
     }
     .btn--cta {
         font-size: 20px;
@@ -509,21 +503,17 @@ hr {
     
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     #showcase {
         width: 100%;
     }
     #showcase h1 {
         width: 100%;
-        font-size: 60px;
         margin-top: 300px;
         margin-bottom: 0px;
     }
     #showcase p {
         width: 100%;
-        font-size: 30px;
-        /* font-weight: bold; */
         position: relative;
     }
     .btn--cta {
@@ -534,34 +524,32 @@ hr {
         float:none;
         text-align: justify;
         width: 100%;
-    }
-    
+    }    
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     #showcase {
         width: 100%;
     }
     #showcase h1 {
         width: 100%;
-        font-size: 60px;
+        font-size: 55px;
         margin-top: 300px;
         margin-bottom: 0px;
     }
     #showcase p {
         width: 100%;
-        font-size: 30px;
-        /* font-weight: bold; */
+        font-size: 20px;
+        font-weight: bold;
         position: relative;
     }
     .btn--cta {
-        font-size: 20px;
+        /* font-size: 20px; */
     }
-    /* article#main-col,
+    article#main-col,
     aside#sidebar {
         float:none;
         text-align: justify;
         width: 100%;
-    } */
+    }
 }
