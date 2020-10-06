@@ -129,27 +129,18 @@ ul {
 /* Showcase section */
 
 #showcase {
-
-    height: 100vh;
-
+    min-height: 100vh;
     background: url('../images/bg-showcase-img.jpg')no-repeat;
     background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     text-align: center;
     color: #fafafa;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-attachment: fixed;
+    display: block;
     position: relative;
 }
 
 #showcase h1 {
-    margin-top: 150px;
+    margin-top: 310px;
     font-size: 55px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -162,12 +153,8 @@ ul {
     position: relative;
 }
 
-/* Card section */
 
-#cards {
-    margin: 10px;
-    padding: 0px;
-}
+/* Card section */
 
 #cards .card {
     display: inline-block;
@@ -203,6 +190,7 @@ ul {
 }
 .card-container p {
     text-align: justify;
+    width: 100%;
 }
 
 #cards .row {
@@ -287,7 +275,7 @@ aside#sidebar .membership input {
       text-decoration: none;
   }
 
-  /* Sports */
+/* Sports */
 
 .container-sports {
     position: relative;
@@ -451,14 +439,40 @@ hr {
 
 /* Media Queries */
 
-
-@media(max-width: 768px){
-
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #showcase {
+        width: 100%;
+        display: block;
+}
+    }
     #showcase h1 {
-        margin-top: 50px;
+        width: 100%;
+        font-size: 40px;
+        margin-top: 80px;
         margin-bottom: 0px;
     }
+    article#main-col,
+    aside#sidebar {
+        float:none;
+        text-align: justify;
+        width: 100%;
+    }
+    
+}
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #showcase {
+        width: 100%;
+        display: block;
+}
+    #showcase h1 {
+        width: 100%;
+        font-size: 80px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
     article#main-col,
     aside#sidebar {
         float:none;
@@ -466,17 +480,88 @@ hr {
         width: 100%;
     }
 }
+    
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #showcase {
+        width: 100%;
+        display: block;
+}
+    #showcase h1 {
+        width: 100%;
+        font-size: 60px;
+        margin-top: 400px;
+        margin-bottom: 0px;
+    }
+    #showcase p {
+        font-size: 30px;
+    }
+    .btn--cta {
+        font-size: 20px;
+    }
+    article#main-col,
+    aside#sidebar {
+        float:none;
+        text-align: justify;
+        width: 100%;
+    }
+    
+}
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #showcase {
+        width: 100%;
+    }
+    #showcase h1 {
+        width: 100%;
+        font-size: 60px;
+        margin-top: 300px;
+        margin-bottom: 0px;
+    }
+    #showcase p {
+        width: 100%;
+        font-size: 30px;
+        /* font-weight: bold; */
+        position: relative;
+    }
+    .btn--cta {
+        font-size: 20px;
+    }
+    article#main-col,
+    aside#sidebar {
+        float:none;
+        text-align: justify;
+        width: 100%;
+    }
+    
+}
 
-
-
-
-
-
-
-
-
-
-
-
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #showcase {
+        width: 100%;
+    }
+    #showcase h1 {
+        width: 100%;
+        font-size: 60px;
+        margin-top: 300px;
+        margin-bottom: 0px;
+    }
+    #showcase p {
+        width: 100%;
+        font-size: 30px;
+        /* font-weight: bold; */
+        position: relative;
+    }
+    .btn--cta {
+        font-size: 20px;
+    }
+    /* article#main-col,
+    aside#sidebar {
+        float:none;
+        text-align: justify;
+        width: 100%;
+    } */
+}
