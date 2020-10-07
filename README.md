@@ -46,11 +46,11 @@ the content easily and with help of eye catching features to attract their atten
 
 ### Wireframes
 * Home Page Wireframe - [wireframe](https://github.com/kafamem/msone-kafagym/blob/master/assets/images/Landing%20page.png)
-* About Us Page Wireframe - [wireframe]()
-* Gallery Page Wireframe - [wireframe]()
-* Sports Page Wireframe - [wireframe]()
-* Sign Up/In Page Wireframe - [wireframe]()
-* Contact Us Wireframe - [wireframe]()
+* About Us Page Wireframe - [wireframe](https://github.com/kafamem/msone-kafagym/blob/master/assets/images/about-us%20-%20desktop%20%26%20mobile%20views.png)
+* Gallery Page Wireframe - [wireframe](https://github.com/kafamem/msone-kafagym/blob/master/assets/images/gallery%20-%20desktop%20%26%20mobile%20views.png)
+* Sports Page Wireframe - [wireframe](https://github.com/kafamem/msone-kafagym/blob/master/assets/images/sports%20-desktop%20%26%20mobile%20views.png)
+* Sign Up/In Page Wireframe - [wireframe](https://github.com/kafamem/msone-kafagym/blob/master/assets/images/sign%20up%20-%20desktop%20%26%20mobile%20views.png)
+* Contact Us Wireframe - [wireframe](https://github.com/kafamem/msone-kafagym/blob/master/assets/images/contact%20us%20-%20desktop%20%26%20mobile%20views.png)
 
 
 ## Features
@@ -112,12 +112,15 @@ In order to check the validity of the website code, the W3C Markup Validator and
         - Once the website home page is opened, a welcoming page with different sections is displayed. There is navigation bar that includes the KafaGym logo and the links leading to various pages.
         - The showcase image welcomes the user via the gym slogan and button link calling the user to become a member by click the Getting Started button pointing to the sign up page.
         - The user can also find out more about the sport types that are offered by clicking 'Learn more' on each of these found under Our programs (card area).
+        * Easy navigation of the content - [screenshot](https://github.com/kafamem/msone-kafagym/blob/master/assets/images/homepage-showcase-user-story.jpg)
+
    1. As a first time user to the KafaGym site, I want to explore more about the site content through navigation.
         - The website layout is clear and simple to navigate. The navigation links make it easier for the user to know what kind of content expected upon clicking them.
         - The card area give a quick piece of information about each sport type while the footer provides the information about the gym location, opening hours as well as the subscription to newsletter.
    1. As a first time user to the KafaGym site, I want to be able to sign up for membership and get in touch with organisation. 
         - The site provides options for sign up for potential members under the link 'Sign Up/In'. However, the form does not go beyond as it is not yet linked with the back end functionalities. User can also contact the organisation by filling 
           the 'Contact Us' form under the link 'Contact Us'; this is yet to be linked to the backend functionalities as well.
+        * Membership subscription - [screenshot](https://github.com/kafamem/msone-kafagym/blob/master/assets/images/membership-subscription.jpg)
 1. Regular User
     1. As a regular user, I want to book a training session with an instructor at KafaGym through logging in my account
         - Regular users will have the options to log in and book sessions after the creation of login form.
@@ -125,16 +128,17 @@ In order to check the validity of the website code, the W3C Markup Validator and
 1. Returning user
     1. As a returning user, I want to find out about training groups and their community links.
         - The site provides social links that will allow the gym community to stay connected and at the same increasing the gym visibility.
-    1. As a returning user, I want to get in touch with the KafaGym organisation with any questions I may need to ask.<br>
+        * Community links - [screenshot](https://github.com/kafamem/msone-kafagym/blob/master/assets/images/community-links.jpg)
+    1. As a returning user, I want to get in touch with the KafaGym organization with any questions I may need to ask.<br>
+        - The site provides its user with the possibility to communicate with the gym organization via contact form.
+        * Interaction with organization - [screenshot](https://github.com/kafamem/msone-kafagym/blob/master/assets/images/interaction-with-organization.jpg)
 
 ### Further Testing
 * The website was tested through different browsers; Google Chrome, Mozilla Firefox, Microsoft Edge and Safari browsers.
-* The website was viewed through various devices including iPhone7, large screen and laptop to check it responsiveness.
+* The website was viewed through various devices including iPhone7 and iPad, large screen and laptop to check it responsiveness.
 * Pages were tested to ensure that they function correctly in order to allow an effective the navigation. The back and next buttons respond correctly on the website.
 
 ### Known Bugs
-* The showcase image on the home page appears to be adapted to mobile device correctly from the simulated Google Chrome view. But in reality, the same picture 
-seems to be streched on the real iPhone (on iOS) view but displays correctly on Android devices.
 * Due to time constraints, the sport page under the link 'Sports' was not styled as I wanted it to appear though it's fully functional.
 
 ## Deployment
