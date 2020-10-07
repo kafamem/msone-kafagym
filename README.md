@@ -46,6 +46,12 @@ the content easily and with help of eye catching features to attract their atten
 
 ### Wireframes
 * Home Page Wireframe - [wireframe](https://github.com/kafamem/msone-kafagym/blob/master/assets/images/Landing%20page.png)
+* About Us Page Wireframe - [wireframe]()
+* Gallery Page Wireframe - [wireframe]()
+* Sports Page Wireframe - [wireframe]()
+* Sign Up/In Page Wireframe - [wireframe]()
+* Contact Us Wireframe - [wireframe]()
+
 
 ## Features
 

@@ -60,7 +60,7 @@ ul {
 .btn--orange {
     background-color: #FAA61A;
     color: #fafafa;
-    border-color: #FAA61A;
+    border-color: #F7941E;
     text-align: center !important;
 }
 
@@ -441,8 +441,8 @@ hr {
     #showcase {
         width: 100%;
         display: block;
-}
     }
+    
     #showcase h1 {
         width: 100%;
         font-size: 40px;
@@ -455,7 +455,6 @@ hr {
         text-align: justify;
         width: 100%;
     }
-    
 }
 
 @media only screen and (min-width: 600px) {
@@ -468,12 +467,6 @@ hr {
         font-size: 80px;
         margin-top: 0px;
         margin-bottom: 0px;
-    }
-    article#main-col,
-    aside#sidebar {
-        float:none;
-        text-align: justify;
-        width: 100%;
     }
 }
     
@@ -493,14 +486,7 @@ hr {
     }
     .btn--cta {
         font-size: 20px;
-    }
-    article#main-col,
-    aside#sidebar {
-        float:none;
-        text-align: justify;
-        width: 100%;
-    }
-    
+    }    
 }
 
 @media only screen and (min-width: 992px) {
@@ -519,12 +505,6 @@ hr {
     .btn--cta {
         font-size: 20px;
     }
-    article#main-col,
-    aside#sidebar {
-        float:none;
-        text-align: justify;
-        width: 100%;
-    }    
 }
 
 @media only screen and (min-width: 1200px) {
@@ -544,12 +524,6 @@ hr {
         position: relative;
     }
     .btn--cta {
-        /* font-size: 20px; */
-    }
-    article#main-col,
-    aside#sidebar {
-        float:none;
-        text-align: justify;
-        width: 100%;
+        font-size: 20px;
     }
 }
