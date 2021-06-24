@@ -2,6 +2,8 @@
 
 Welcome to [KafaGym](https://kafamem.github.io/msone-kafagym)
 
+![MS1Responsivenes]()
+
 ## Project rationale
 
 The KafaGym project aimed at creating a website for business that targets gym members as site's users.
