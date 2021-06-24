@@ -2,7 +2,7 @@
 
 Welcome to [KafaGym](https://kafamem.github.io/msone-kafagym)
 
-![MS1Responsivenes]()
+![MS1Responsivenes](https://github.com/kafamem/msone-kafagym/blob/master/assets/images/MS1%20Responsiveness.JPG)
 
 ## Project rationale
 
